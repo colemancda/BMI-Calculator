@@ -8,15 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(int , Measurement) {
+typedef enum {
     None = 0,
     Metric,
     English
-};
+} Measurement;
 
 #define kErrorDomain @"com.ColemanCDA.FBApp.ErrorDomain"
 
 @interface CDABMICalculator : NSObject
+{
+    Measurement _measurement;
+    float _height;
+    float _weight;
+}
 
 @property Measurement measurement;
 

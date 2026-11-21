@@ -24,4 +24,16 @@
     return self;
 }
 
+// Subclasses answer these from their own fields.
+
+- (float)height
+{
+    return 0;
+}
+
+- (float)weight
+{
+    return 0;
+}
+
 @end

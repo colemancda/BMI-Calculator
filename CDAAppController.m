@@ -19,6 +19,10 @@ NSString* const CDAMeasurementChangedNotification = @"CDAMeasurementsChanged";
 
 @implementation CDAAppController
 
+@synthesize box = _box;
+@synthesize bmiViewControllers = _bmiViewControllers;
+@synthesize preferences = _preferences;
+
 -(id)init
 {
     self = [super init];
@@ -28,12 +32,15 @@ NSString* const CDAMeasurementChangedNotification = @"CDAMeasurementsChanged";
         CDAMetricViewController *metricViewController = [[CDAMetricViewController alloc] init];
         CDAEnglishViewController *englishViewController = [[CDAEnglishViewController alloc] init];
         
-        _bmiViewControllers = @[metricViewController, englishViewController];
-        
-        
+        _bmiViewControllers = [[NSArray alloc] initWithObjects:metricViewController, englishViewController, nil];
+        [metricViewController release];
+        [englishViewController release];
+
+
         // log
         CDAMeasurementToString *converter = [[CDAMeasurementToString alloc] init];
         NSLog(@"Starting app with %@ measurements", [converter convert:self.currentMeasurement.floatValue]);
+        [converter release];
         
         // register for notifications
         NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
@@ -45,6 +52,14 @@ NSString* const CDAMeasurementChangedNotification = @"CDAMeasurementsChanged";
     return self;
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [_bmiViewControllers release];
+    [_preferences release];
+    [super dealloc];
+}
+
 #pragma mark Notification handler methods
 
 -(void)handleMeasurementChange:(NSNotification *)note
@@ -52,6 +67,7 @@ NSString* const CDAMeasurementChangedNotification = @"CDAMeasurementsChanged";
     int measurement = self.currentMeasurement.intValue;
     CDAMeasurementToString *converter = [[CDAMeasurementToString alloc] init];
     NSLog(@"Measurements changed to %@", [converter convert:measurement]);
+    [converter release];
     [self changeViewFor:measurement];
 }
 
@@ -62,7 +78,7 @@ NSString* const CDAMeasurementChangedNotification = @"CDAMeasurementsChanged";
 {
     int i = measurement;
     i--;
-    CDABMIViewController *vc = self.bmiViewControllers[i];
+    CDABMIViewController *vc = [self.bmiViewControllers objectAtIndex:i];
     [self changeView:vc];
 }
 
@@ -109,11 +125,11 @@ NSString* const CDAMeasurementChangedNotification = @"CDAMeasurementsChanged";
 
 - (IBAction)calculateButton:(id)sender {
     
-    NSError *error;
-    
+    NSError *error = nil;
+
     int i = self.currentMeasurement.intValue;
     i--;
-    CDABMIViewController *vc = self.bmiViewControllers[i];
+    CDABMIViewController *vc = [self.bmiViewControllers objectAtIndex:i];
     
     float height = vc.height;
     float weight = vc.weight;
@@ -123,8 +139,9 @@ NSString* const CDAMeasurementChangedNotification = @"CDAMeasurementsChanged";
     CDAMeasurementToString *toString = [[CDAMeasurementToString alloc] init];
     
     NSLog(@"Calculating BMI for %.2f height and %.2f weight in %@ measurements", height, weight, [toString convert:measurement]);
-    
-    CDABMICalculator *bmiCalculator = [[CDABMICalculator alloc] initWithMeasurement:measurement height:height weight:weight];
+    [toString release];
+
+    CDABMICalculator *bmiCalculator = [[[CDABMICalculator alloc] initWithMeasurement:measurement height:height weight:weight] autorelease];
     float result = [bmiCalculator calculateWithError:&error];
     if (error) {
         [NSApp presentError:error];
@@ -135,8 +152,8 @@ NSString* const CDAMeasurementChangedNotification = @"CDAMeasurementsChanged";
                               result,
                               [bmiCalculator resultMessageForBMI:result error:&error]];
     if (!error) {
-        NSRunAlertPanel(@"Body Mass Index", resultString,
-                        @"OK", nil, nil);
+        NSRunAlertPanel(@"Body Mass Index", @"%@",
+                        @"OK", nil, nil, resultString);
         return;
     }
     

@@ -14,6 +14,10 @@
 
 @implementation CDAEnglishViewController
 
+@synthesize pounds = _pounds;
+@synthesize inches = _inches;
+@synthesize feet = _feet;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

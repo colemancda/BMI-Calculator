@@ -10,7 +10,7 @@
 
 @interface CDAPreferencesWindowController : NSWindowController
 
-@property NSNumber *currentMeasurement;
+@property (retain) NSNumber *currentMeasurement;
 
 @property BOOL metric;
 

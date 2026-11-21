@@ -10,6 +10,10 @@
 
 @implementation CDABMICalculator
 
+@synthesize measurement = _measurement;
+@synthesize height = _height;
+@synthesize weight = _weight;
+
 - (id)init
 {
     self = [super init];
@@ -32,15 +36,15 @@
     return self;
 }
 
--(float)calculateWithError:(NSError *__autoreleasing *)error
+-(float)calculateWithError:(NSError **)error
 {
     // check if a property is zero
     if (_measurement == 0 || _height == 0 || _weight == 0) {
         // count how many properties are not set.
         NSArray *properties =
-        @[[NSNumber numberWithFloat:_measurement],
+        [NSArray arrayWithObjects:[NSNumber numberWithFloat:_measurement],
         [NSNumber numberWithFloat:_height],
-        [NSNumber numberWithFloat:_weight]];
+        [NSNumber numberWithFloat:_weight], nil];
         int count = 0;
         for (NSNumber *number in properties) {
             if ([number floatValue] == 0.0) {
@@ -48,7 +52,7 @@
             }
         }
         NSString *errorDescription = [NSString stringWithFormat:@"%d properties where not set.", count];
-        NSDictionary *userInfo = @{NSLocalizedDescriptionKey : errorDescription};
+        NSDictionary *userInfo = [NSDictionary dictionaryWithObject:errorDescription forKey:NSLocalizedDescriptionKey];
         *error = [NSError errorWithDomain:kErrorDomain
                                      code:102
                                  userInfo:userInfo];
@@ -68,11 +72,11 @@
     return 0;
 }
 
--(NSString *)resultMessageForBMI:(float)bmi error:(NSError *__autoreleasing *)error
+-(NSString *)resultMessageForBMI:(float)bmi error:(NSError **)error
 {
     if (bmi < 0) {
         NSString *errorDescription = [NSString stringWithFormat:@"Your BMI is a negative number.  (BMI = %.2f)", bmi];
-        NSDictionary *userInfo = @{NSLocalizedDescriptionKey : errorDescription};
+        NSDictionary *userInfo = [NSDictionary dictionaryWithObject:errorDescription forKey:NSLocalizedDescriptionKey];
         *error = [NSError errorWithDomain:kErrorDomain
                                      code:103
                                  userInfo:userInfo];
@@ -96,7 +100,7 @@
     
     // if error
     NSString *errorDescription = [NSString stringWithFormat:@"Your BMI is not in the valid range. (BMI = %.2f)", bmi ];
-    NSDictionary *userInfo = @{NSLocalizedDescriptionKey : errorDescription};
+    NSDictionary *userInfo = [NSDictionary dictionaryWithObject:errorDescription forKey:NSLocalizedDescriptionKey];
     *error = [NSError errorWithDomain:kErrorDomain
                                  code:104
                              userInfo:userInfo];

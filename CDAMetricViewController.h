@@ -10,6 +10,10 @@
 #import "CDABMIViewController.h"
 
 @interface CDAMetricViewController : CDABMIViewController
+{
+    float _m;
+    float _kg;
+}
 
 @property float m;
 

@@ -10,6 +10,11 @@
 #import "CDABMIViewController.h"
 
 @interface CDAEnglishViewController : CDABMIViewController
+{
+    float _pounds;
+    float _inches;
+    float _feet;
+}
 
 @property float pounds;
 

@@ -17,14 +17,19 @@ extern NSString* const CDAMeasurementKey;
 extern NSString* const CDAMeasurementChangedNotification;
 
 @interface CDAAppController : NSObject
+{
+    NSBox *_box;
+    NSArray *_bmiViewControllers;
+    CDAPreferencesWindowController *_preferences;
+}
 
-@property IBOutlet NSBox *box;
+@property (assign) IBOutlet NSBox *box;
 
-@property NSArray *bmiViewControllers;
+@property (retain) NSArray *bmiViewControllers;
 
-@property CDAPreferencesWindowController *preferences;
+@property (retain) CDAPreferencesWindowController *preferences;
 
-@property NSNumber *currentMeasurement;
+@property (retain) NSNumber *currentMeasurement;
 
 @property (readonly) BOOL isUserDefaultBlank;
 

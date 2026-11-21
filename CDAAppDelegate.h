@@ -9,6 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 @interface CDAAppDelegate : NSObject <NSApplicationDelegate>
+{
+    NSWindow *_window;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 

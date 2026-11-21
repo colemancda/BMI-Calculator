@@ -40,7 +40,7 @@
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="NSCustomView" id="361646078">
 						<reference key="NSNextResponder" ref="1005"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">301</int>
 						<array class="NSMutableArray" key="NSSubviews">
 							<object class="NSTextField" id="825396490">
 								<reference key="NSNextResponder" ref="361646078"/>
@@ -287,7 +287,7 @@
 								<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 							</object>
 						</array>
-						<string key="NSFrame">{{10, 54}, {470, 94}}</string>
+						<string key="NSFrame">{{10, 10}, {470, 94}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="274524589"/>
@@ -295,7 +295,7 @@
 						<string key="NSClassName">NSView</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{490, 202}</string>
+				<string key="NSFrameSize">{490, 114}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="361646078"/>

@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05959B43ABF8558BDE05F669 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A027DB98280E021B831EB92D /* MainMenu.xib */; };
+		86AE20D50FADC0A03766E946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0908DD9C69D129E591F1E8F /* InfoPlist.strings */; };
+		E0C76393F62DA51824CDCA66 /* MetricView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A7F81D17702881FB1112DE /* MetricView.xib */; };
+		D86CF85695719D0E52F84B3A /* EnglishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5FEA8A89126E241431FF480 /* EnglishView.xib */; };
+		CBD8D1F9E4368BA0558D35B3 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6682F3E8FA46FF3BAACE155A /* PreferencesWindow.xib */; };
+		BD6ACF989498553164F6D5F6 /* CDAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6DC08FD80F7B0E6D4C40A /* CDAAppController.m */; };
+		4457AAAB3663D45A6F3CD441 /* CDAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CDFACF4FF39FE9B3C66D2F /* CDAAppDelegate.m */; };
+		84B7F58CC088C73B654A410E /* CDABMICalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5DA45055412F4050B21305 /* CDABMICalculator.m */; };
+		0E848E121EC867519C748336 /* CDABMIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7123B6D9437F9B40FCD1578E /* CDABMIViewController.m */; };
+		DED00038BFE2E22E803DF3B3 /* CDAEnglishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB036C3D2A6182C0F617CCCA /* CDAEnglishViewController.m */; };
+		7099234E94317CB065C2047A /* CDAMeasurementToString.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A4FBB8140A3DBE3136F28F /* CDAMeasurementToString.m */; };
+		34136B5CF9090CFE74DEB2EC /* CDAMetricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA95FACA8131BE3695748FB4 /* CDAMetricViewController.m */; };
+		87E51840891717C1E70671CF /* CDAPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DEFD4D714D241AE8524E56 /* CDAPreferencesWindowController.m */; };
+		03F5FD748F2B82BDA396CB0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED00D05AFB9A9C2C4A068FB /* main.m */; };
+		9A52A30B56F97B66EBCEBF04 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8A7A0B0BA31A33B68EDB3E /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4CE03F3196D1276175B6F77 /* CDAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAAppController.h; sourceTree = "<group>"; };
+		5DE6DC08FD80F7B0E6D4C40A /* CDAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAAppController.m; sourceTree = "<group>"; };
+		0744A6751C5FEF75BDEF444C /* CDAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAAppDelegate.h; sourceTree = "<group>"; };
+		57CDFACF4FF39FE9B3C66D2F /* CDAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAAppDelegate.m; sourceTree = "<group>"; };
+		4DDD38C1F4FC27A9EF99F1FE /* CDABMICalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDABMICalculator.h; sourceTree = "<group>"; };
+		AF5DA45055412F4050B21305 /* CDABMICalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDABMICalculator.m; sourceTree = "<group>"; };
+		BED2789726162E21A6956E18 /* CDABMIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDABMIViewController.h; sourceTree = "<group>"; };
+		7123B6D9437F9B40FCD1578E /* CDABMIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDABMIViewController.m; sourceTree = "<group>"; };
+		F9C524563E28ED61359D0E98 /* CDAEnglishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAEnglishViewController.h; sourceTree = "<group>"; };
+		CB036C3D2A6182C0F617CCCA /* CDAEnglishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAEnglishViewController.m; sourceTree = "<group>"; };
+		80988B688F0D673C6C470DBA /* CDAMeasurementToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAMeasurementToString.h; sourceTree = "<group>"; };
+		E4A4FBB8140A3DBE3136F28F /* CDAMeasurementToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAMeasurementToString.m; sourceTree = "<group>"; };
+		B1AE81F0D618939232931CD1 /* CDAMetricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAMetricViewController.h; sourceTree = "<group>"; };
+		CA95FACA8131BE3695748FB4 /* CDAMetricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAMetricViewController.m; sourceTree = "<group>"; };
+		3ADB8D1418A21014F8BAEA86 /* CDAPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAPreferencesWindowController.h; sourceTree = "<group>"; };
+		26DEFD4D714D241AE8524E56 /* CDAPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAPreferencesWindowController.m; sourceTree = "<group>"; };
+		EACCDE568BB8BFF53BB9C820 /* BMI Calculator-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMI Calculator-Prefix.pch"; sourceTree = "<group>"; };
+		7ED00D05AFB9A9C2C4A068FB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13A03CFFEE26A9B9A367DAD9 /* BMI Calculator-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BMI Calculator-Info.plist"; sourceTree = "<group>"; };
+		2941F94930E48375BD1F5A32 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B4A0C7151799237B1DFD3B94 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		51A7F81D17702881FB1112DE /* MetricView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetricView.xib; sourceTree = "<group>"; };
+		A5FEA8A89126E241431FF480 /* EnglishView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnglishView.xib; sourceTree = "<group>"; };
+		6682F3E8FA46FF3BAACE155A /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		6F8A7A0B0BA31A33B68EDB3E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8A247A2079A6E4934CBC47E7 /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF5BDB0BEAFE176F9629192A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A52A30B56F97B66EBCEBF04 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADCF10F76EBF2A74473E9DC4 /* BMI Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				95C6993A4CBF5B411A4F42BE /* Classes */,
+				BDCFDE7FDDD839AADD9E2C91 /* Other Sources */,
+				22D02A9EFAC9B3FBBAEBE062 /* Resources */,
+				ED2F3B048716C9DC7573911C /* Frameworks */,
+				00C45FD35CB0F9C5F764F070 /* Products */,
+			);
+			name = "BMI Calculator";
+			sourceTree = "<group>";
+		};
+		95C6993A4CBF5B411A4F42BE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE03F3196D1276175B6F77 /* CDAAppController.h */,
+				5DE6DC08FD80F7B0E6D4C40A /* CDAAppController.m */,
+				0744A6751C5FEF75BDEF444C /* CDAAppDelegate.h */,
+				57CDFACF4FF39FE9B3C66D2F /* CDAAppDelegate.m */,
+				4DDD38C1F4FC27A9EF99F1FE /* CDABMICalculator.h */,
+				AF5DA45055412F4050B21305 /* CDABMICalculator.m */,
+				BED2789726162E21A6956E18 /* CDABMIViewController.h */,
+				7123B6D9437F9B40FCD1578E /* CDABMIViewController.m */,
+				F9C524563E28ED61359D0E98 /* CDAEnglishViewController.h */,
+				CB036C3D2A6182C0F617CCCA /* CDAEnglishViewController.m */,
+				80988B688F0D673C6C470DBA /* CDAMeasurementToString.h */,
+				E4A4FBB8140A3DBE3136F28F /* CDAMeasurementToString.m */,
+				B1AE81F0D618939232931CD1 /* CDAMetricViewController.h */,
+				CA95FACA8131BE3695748FB4 /* CDAMetricViewController.m */,
+				3ADB8D1418A21014F8BAEA86 /* CDAPreferencesWindowController.h */,
+				26DEFD4D714D241AE8524E56 /* CDAPreferencesWindowController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BDCFDE7FDDD839AADD9E2C91 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EACCDE568BB8BFF53BB9C820 /* BMI Calculator-Prefix.pch */,
+				7ED00D05AFB9A9C2C4A068FB /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		22D02A9EFAC9B3FBBAEBE062 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13A03CFFEE26A9B9A367DAD9 /* BMI Calculator-Info.plist */,
+				A027DB98280E021B831EB92D /* MainMenu.xib */,
+				F0908DD9C69D129E591F1E8F /* InfoPlist.strings */,
+				51A7F81D17702881FB1112DE /* MetricView.xib */,
+				A5FEA8A89126E241431FF480 /* EnglishView.xib */,
+				6682F3E8FA46FF3BAACE155A /* PreferencesWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ED2F3B048716C9DC7573911C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F8A7A0B0BA31A33B68EDB3E /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00C45FD35CB0F9C5F764F070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A247A2079A6E4934CBC47E7 /* BMI Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E8A3AD980EC179856012B7E /* BMI Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACEA347C8CDD29A012FDEB0F /* Build configuration list for PBXNativeTarget "BMI Calculator" */;
+			buildPhases = (
+				C02F1309AF4906C92F1EAD44 /* Resources */,
+				1CDF2F71A52B082132B04DFF /* Sources */,
+				CF5BDB0BEAFE176F9629192A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BMI Calculator";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "BMI Calculator";
+			productReference = 8A247A2079A6E4934CBC47E7 /* BMI Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EF518AB9E379FA8088ED7FA6 /* Build configuration list for PBXProject "BMI Calculator" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = ADCF10F76EBF2A74473E9DC4 /* BMI Calculator */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E8A3AD980EC179856012B7E /* BMI Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C02F1309AF4906C92F1EAD44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05959B43ABF8558BDE05F669 /* MainMenu.xib in Resources */,
+				86AE20D50FADC0A03766E946 /* InfoPlist.strings in Resources */,
+				E0C76393F62DA51824CDCA66 /* MetricView.xib in Resources */,
+				D86CF85695719D0E52F84B3A /* EnglishView.xib in Resources */,
+				CBD8D1F9E4368BA0558D35B3 /* PreferencesWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CDF2F71A52B082132B04DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6ACF989498553164F6D5F6 /* CDAAppController.m in Sources */,
+				4457AAAB3663D45A6F3CD441 /* CDAAppDelegate.m in Sources */,
+				84B7F58CC088C73B654A410E /* CDABMICalculator.m in Sources */,
+				0E848E121EC867519C748336 /* CDABMIViewController.m in Sources */,
+				DED00038BFE2E22E803DF3B3 /* CDAEnglishViewController.m in Sources */,
+				7099234E94317CB065C2047A /* CDAMeasurementToString.m in Sources */,
+				34136B5CF9090CFE74DEB2EC /* CDAMetricViewController.m in Sources */,
+				87E51840891717C1E70671CF /* CDAPreferencesWindowController.m in Sources */,
+				03F5FD748F2B82BDA396CB0B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A027DB98280E021B831EB92D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2941F94930E48375BD1F5A32 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F0908DD9C69D129E591F1E8F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4A0C7151799237B1DFD3B94 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		877A6BA951A2EA0025A2ABE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		959134B361DD7E21ADEA3164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		1E0DDAF384B911BF23BC77ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMI Calculator-Prefix.pch";
+				INFOPLIST_FILE = "BMI Calculator-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "BMI Calculator";
+			};
+			name = Debug;
+		};
+		A1EFC270D4D6011185E1BD4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMI Calculator-Prefix.pch";
+				INFOPLIST_FILE = "BMI Calculator-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "BMI Calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF518AB9E379FA8088ED7FA6 /* Build configuration list for PBXProject "BMI Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877A6BA951A2EA0025A2ABE8 /* Debug */,
+				959134B361DD7E21ADEA3164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACEA347C8CDD29A012FDEB0F /* Build configuration list for PBXNativeTarget "BMI Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0DDAF384B911BF23BC77ED /* Debug */,
+				A1EFC270D4D6011185E1BD4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}
